@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import CustomHook from './CustomHook'
 import FetchDataExercise from './FetchData'
 import SetUpFocusInput from './FocusInput'
 import GiftCard from './GiftCard'
@@ -12,6 +13,7 @@ function App() {
       <FetchDataExercise />
       <SetUpFocusInput />
       <Increment />
+      <CustomHook />
     </div>
   )
 }
