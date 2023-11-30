@@ -2,6 +2,7 @@ import { useState } from 'react'
 import FetchDataExercise from './FetchData'
 import SetUpFocusInput from './FocusInput'
 import GiftCard from './GiftCard'
+import Increment from './Increment'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <GiftCard />
       <FetchDataExercise />
       <SetUpFocusInput />
+      <Increment />
     </div>
   )
 }
