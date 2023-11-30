@@ -1,14 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const FetchDataExercise = () => {
     const [user, setUser] = useState([]);
 
-    const FetchData = () => {
+    const fetchData = () => {
         fetch("https://randomuser.me/api/?results=1")
             .then((response)=> response.json())
             .then((data)=> setUser(data))
     }
-  
+    useEffect(() => {
+        fetchData();
+    }, []);
 
     return Object.keys(user).length > 0 ? (
         <div>
