@@ -5,6 +5,7 @@ import FetchDataExercise from './FetchData'
 import SetUpFocusInput from './FocusInput'
 import GiftCard from './GiftCard'
 import Increment from './Increment'
+import ShowMousePosition from './Render'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Increment />
       <CustomHook />
       <Options />
+      <ShowMousePosition />
     </div>
   )
 }
